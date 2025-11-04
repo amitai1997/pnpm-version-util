@@ -1,0 +1,70 @@
+{
+  "name": "pnpm-version-util",
+  "version": "1.0.0",
+  "description": "Simple CLI utility to read package version from package.json - a pnpm-friendly alternative to 'npm version'",
+  "type": "module",
+  "bin": {
+    "pnpm-version": "./build/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./build/pnpm-version-util.d.ts",
+      "import": "./build/pnpm-version-util.js"
+    }
+  },
+  "files": [
+    "build",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "pnpm run clean:ts && rm -rf build tsconfig.build.tsbuildinfo",
+    "clean:ts": "tsc --build --clean",
+    "build": "pnpm run clean && pnpm run build:ts && pnpm run postbuild",
+    "build:ts": "tsc -p tsconfig.build.json",
+    "postbuild": "chmod +x build/cli.js",
+    "test": "pnpm run lint && pnpm run test:jest",
+    "test:jest": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "lint": "pnpm run lint:scripts",
+    "lint:scripts": "eslint src/ test/",
+    "prepublishOnly": "pnpm run build && pnpm test"
+  },
+  "keywords": [
+    "pnpm",
+    "version",
+    "package-version",
+    "cli",
+    "npm-version",
+    "package.json",
+    "monorepo",
+    "workspace"
+  ],
+  "author": "Amitai Salmon",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amitaisalmon/pnpm-version-util.git"
+  },
+  "bugs": {
+    "url": "https://github.com/amitaisalmon/pnpm-version-util/issues"
+  },
+  "homepage": "https://github.com/amitaisalmon/pnpm-version-util#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@jest/globals": "^29.0.0",
+    "@types/node": "^22.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^9.15.0",
+    "jest": "^29.0.0",
+    "prettier": "^3.0.0",
+    "ts-jest": "^29.0.0",
+    "typescript": "^5.0.0"
+  }
+}

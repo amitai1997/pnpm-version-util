@@ -1,0 +1,29 @@
+# Source files
+src/
+test/
+*.test.ts
+
+# Configuration files
+tsconfig.json
+tsconfig.build.json
+eslint.config.js
+jest.config.js
+.prettierrc
+.gitignore
+.cursorignore
+
+# Development files
+node_modules/
+coverage/
+*.tsbuildinfo
+.DS_Store
+
+# Documentation that's not needed in published package
+CONTRIBUTING.md
+setup-shell.sh
+
+# Lock files
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
