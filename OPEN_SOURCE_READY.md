@@ -22,7 +22,7 @@ All systems are working correctly:
    - Changed CLI binary from `version` to `pnpm-version` (more specific)
    - Changed license from `UNLICENSED` to `MIT`
    - Updated author information
-   - Added proper repository URL (github.com/amitaisalmon/pnpm-version-util)
+   - Added proper repository URL (github.com/amitai1997/pnpm-version-util)
    - Added keywords for NPM discoverability
    - Changed from restricted to public access
    - Added `prepublishOnly` script for safety
@@ -108,11 +108,11 @@ Follow the steps in `PUBLISHING.md` to:
 ✅ Comprehensive test coverage  
 ✅ CI/CD ready  
 
-## 🔗 URLs (after publishing)
+## 🔗 URLs
 
-- **NPM**: https://www.npmjs.com/package/pnpm-version-util
-- **GitHub**: https://github.com/amitaisalmon/pnpm-version-util
-- **Issues**: https://github.com/amitaisalmon/pnpm-version-util/issues
+- **NPM**: https://www.npmjs.com/package/pnpm-version-util (ready to publish)
+- **GitHub**: https://github.com/amitai1997/pnpm-version-util ✅ Live!
+- **Issues**: https://github.com/amitai1997/pnpm-version-util/issues
 
 ---
 

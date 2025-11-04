@@ -177,11 +177,11 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📝 License
 
-MIT © [Amitai Salmon](https://github.com/amitaisalmon)
+MIT © [Amitai Salmon](https://github.com/amitai1997)
 
 ## 🐛 Issues
 
-Found a bug or have a suggestion? Please [open an issue](https://github.com/amitaisalmon/pnpm-version-util/issues).
+Found a bug or have a suggestion? Please [open an issue](https://github.com/amitai1997/pnpm-version-util/issues).
 
 ## ⭐ Show your support
 

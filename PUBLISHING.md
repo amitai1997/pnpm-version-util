@@ -6,14 +6,14 @@ This document outlines the steps to publish `pnpm-version-util` as an open-sourc
 
 ### Repository Setup
 
-- [ ] Create a new GitHub repository: `https://github.com/amitaisalmon/pnpm-version-util`
-- [ ] Push the code to GitHub:
+- [x] Create a new GitHub repository: `https://github.com/amitai1997/pnpm-version-util`
+- [x] Push the code to GitHub:
   ```bash
   git init
   git add .
   git commit -m "Initial commit"
   git branch -M main
-  git remote add origin https://github.com/amitaisalmon/pnpm-version-util.git
+  git remote add origin https://github.com/amitai1997/pnpm-version-util.git
   git push -u origin main
   ```
 
@@ -129,7 +129,7 @@ npm uninstall -g pnpm-version-util
 After publishing, you can track your package stats:
 - NPM package page: https://www.npmjs.com/package/pnpm-version-util
 - NPM stats: https://npm-stat.com/charts.html?package=pnpm-version-util
-- GitHub insights: https://github.com/amitaisalmon/pnpm-version-util/pulse
+- GitHub insights: https://github.com/amitai1997/pnpm-version-util/pulse
 
 ## 🛟 Troubleshooting
 

@@ -43,7 +43,7 @@ Enhancement suggestions are tracked as GitHub issues. When creating an enhanceme
 
 ```bash
 # Clone your fork
-git clone https://github.com/YOUR-USERNAME/pnpm-version-util.git
+git clone https://github.com/amitai1997/pnpm-version-util.git
 cd pnpm-version-util
 
 # Install dependencies

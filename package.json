@@ -49,12 +49,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amitaisalmon/pnpm-version-util.git"
+    "url": "git+https://github.com/amitai1997/pnpm-version-util.git"
   },
   "bugs": {
-    "url": "https://github.com/amitaisalmon/pnpm-version-util/issues"
+    "url": "https://github.com/amitai1997/pnpm-version-util/issues"
   },
-  "homepage": "https://github.com/amitaisalmon/pnpm-version-util#readme",
+  "homepage": "https://github.com/amitai1997/pnpm-version-util#readme",
   "dependencies": {},
   "devDependencies": {
     "@jest/globals": "^29.0.0",
