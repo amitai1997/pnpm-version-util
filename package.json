@@ -9,9 +9,13 @@
   "exports": {
     ".": {
       "types": "./build/pnpm-version-util.d.ts",
-      "import": "./build/pnpm-version-util.js"
+      "import": "./build/pnpm-version-util.js",
+      "require": "./build/pnpm-version-util.js",
+      "default": "./build/pnpm-version-util.js"
     }
   },
+  "main": "./build/pnpm-version-util.js",
+  "types": "./build/pnpm-version-util.d.ts",
   "files": [
     "build",
     "README.md",
@@ -31,9 +35,13 @@
     "postbuild": "chmod +x build/cli.js",
     "test": "pnpm run lint && pnpm run test:jest",
     "test:jest": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:e2e": "pnpm run test:e2e:local",
+    "test:e2e:local": "./test/e2e/local-e2e-test.sh",
+    "test:e2e:docker": "./test/e2e/run-e2e-tests.sh",
+    "test:all": "pnpm run test && pnpm run test:e2e:local",
     "lint": "pnpm run lint:scripts",
     "lint:scripts": "eslint src/ test/",
-    "prepublishOnly": "pnpm run build && pnpm test"
+    "prepublishOnly": "pnpm run build && pnpm run test:all"
   },
   "keywords": [
     "pnpm",

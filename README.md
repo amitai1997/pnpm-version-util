@@ -155,15 +155,43 @@ function getVersion(options?: GetVersionOptions): string
 # Install dependencies
 pnpm install
 
-# Run tests
+# Run unit tests
 pnpm test
+
+# Run E2E tests (local, fast)
+pnpm run test:e2e
+
+# Run E2E tests (Docker, all Node versions - requires Docker)
+pnpm run test:e2e:docker
+
+# Run all tests
+pnpm run test:all
 
 # Build
 pnpm run build
 
-# Run locally
+# Run CLI locally
 ./build/cli.js
 ```
+
+### Testing Strategy
+
+This package includes comprehensive testing:
+
+- **Unit Tests**: Fast, test core functionality in isolation
+- **Integration Tests**: Test real file system interactions  
+- **E2E Tests (Local)**: Test actual package installation and CLI usage on your current Node version
+- **E2E Tests (Docker)**: Test across Node.js 18, 20, and 22 in clean environments
+
+The E2E tests verify:
+- ✅ Package installs correctly
+- ✅ CLI command works as expected
+- ✅ Programmatic API functions properly
+- ✅ Error handling works correctly
+- ✅ Works across different Node.js versions (Docker tests)
+- ✅ Works in monorepo-like structures
+
+See [test/e2e/README.md](test/e2e/README.md) for detailed E2E testing documentation.
 
 ## 🤝 Contributing
 

@@ -34,3 +34,6 @@ tmp/
 temp/
 *.tmp
 
+# Package tarballs (created during e2e tests)
+*.tgz
+
